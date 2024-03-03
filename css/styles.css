@@ -8,6 +8,63 @@ body {
 h1 {
   text-align: center;
   color: #333;
+
+  border-bottom: 3px solid grey;
 }
 
+
+#listaUsuarios {
+  font-size: .8em;;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  list-style: none;
+
+  padding-inline-start: 0;
+}
+
+.userData-entry{
+  min-width: 400px;
+  height: 180px;
+
+  line-height: .5em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background-color: white;
+  border: 1px solid lightgray;
+
+  padding-left: 1em;
+  padding-top: 1em;
+  margin: .5em;
+}
+
+.userData-entry span{
+  font-weight: bold;
+}
+
+.userData-main {
+  width: 95%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.userData-text {
+  width: 65%;
+
+  border: 2px solid lightgray;
+}
+
+.userData-img {
+  width: 100px;
+  height: auto;
+}
 
