@@ -18,7 +18,7 @@ h1 {
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 
   list-style: none;
@@ -28,7 +28,7 @@ h1 {
 
 .userData-entry{
   min-width: 400px;
-  height: 180px;
+  height: 150px;
 
   line-height: .5em;
 
@@ -39,6 +39,7 @@ h1 {
 
   background-color: white;
   border: 1px solid lightgray;
+  border-radius: 10px;
 
   padding-left: 1em;
   padding-top: 1em;
@@ -60,11 +61,53 @@ h1 {
 .userData-text {
   width: 65%;
 
+  background-color: rgb(249, 254, 255);
   border: 2px solid lightgray;
+  border-radius: 10px;
+
+  padding-left: .5em;
 }
 
 .userData-img {
   width: 100px;
   height: auto;
+  box-shadow: 5px 2px 5px gray;
+  border-radius: 10px;
+
+  
+  transform:scale(1);
+  transition: transform .2s ease;
 }
 
+.userData-img:hover {
+  transform:scale(1.5);
+  transition: transform .5s ease;
+}
+
+.userData-company {
+  width: 100%;
+  height: 45px;
+
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  line-height: 0;
+}
+
+.userData-companyButton {
+  width: 130px;
+  height: 25px;
+
+  border-radius: 5px;
+
+  padding: .2em .2em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.userData-companyButton:hover {
+  background-color: palegoldenrod;
+  border: 2px solid goldenrod;
+}
